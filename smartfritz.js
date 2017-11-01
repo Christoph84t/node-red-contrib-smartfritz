@@ -88,9 +88,9 @@ module.exports = function(RED) {
       }
       try {
         fritz.getSwitchList(sessionID, function(actorID) {
-          if (node.config.aid) {
+          if (n.aid) {
             node.log('Using configured AID.');
-            actorID = node.config.aid;
+            actorID = n.aid;
           }
 
           if (!actorID) {
@@ -206,9 +206,9 @@ module.exports = function(RED) {
 
       try {
         fritz.getSwitchList(sessionID, function(actorID) {
-          if (node.config.aid) {
+          if (n.aid) {
             node.log('Using configured AID.');
-            actorID = node.config.aid;
+            actorID = n.aid;
           }
 
           if (!actorID) {
